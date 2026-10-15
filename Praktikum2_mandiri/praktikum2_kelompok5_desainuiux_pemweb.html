@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum Mandiri 02 - Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <p align="center">
+        <a href="/Praktikum UIUX 2/Praktikum2_mandiri/praktikum2_kelompok5_desainuiux_pemweb.html">Home</a> | 
+        <a href="/Praktikum UIUX 2/Praktikum2_mandiri/praktikum_kelompok5_hasil_desainuiux_pemweb.html">Generate Link</a> | 
+        <a href="#">Transaction History</a> | 
+        <a href="#">Policy</a> | 
+        <a href="#">Logout</a>
+    </p>
+    <hr>
+
+    <form action="/Praktikum UIUX 2/Praktikum2_mandiri/praktikum_kelompok5_hasil_desainuiux_pemweb.html" method="GET">
+        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+            <tr>
+                <td width="30%" valign="top" align="center">
+                    <figure>
+                        <img src="/Praktikum UIUX 2/assets/img/googlepixel.png" alt="Google Pixel 11 Pro" width="200" height="150" border="1">
+                    </figure>
+                </td>
+
+                <!-- Kolom Kanan: Detail Input Form -->
+                <td width="70%" valign="top">
+                    <table border="0" cellpadding="4">
+                        <tr>
+                            <td><label for="title">Title </label></td>
+                            <td>: <input type="text" id="title" name="title" value="Google Pixel 11 Pro" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="description">Description</label></td>
+                            <td>: 
+                                <textarea id="description" name="description" rows="4" cols="30">Year : 2026
+                                    Model : Smartphone
+                                    Condition : New
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_number">Account Number</label></td>
+                            <td>: <input type="text" id="account_number" name="account_number" value="123-456-789-0" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bank">Bank</label></td>
+                            <td>: 
+                                <select id="bank" name="bank">
+                                    <option value="HSBC" selected>BCA</option>
+                                    <option value="BCA">BJB</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                    <option value="BNI">BNI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_holder">Account Holder</label></td>
+                            <td>: <input type="text" id="account_holder" name="account_holder" value="Name Here" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="transaction">Transaction</label></td>
+                            <td>: 
+                                <select id="transaction" name="transaction">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><small>* if the transaction is for 3 person, choose 3 from the drop-down list</small></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" id="chk_mobile" name="send_mobile" checked>
+                                <label for="chk_mobile">Send to Mobile Phone</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" id="chk_email" name="send_email" checked>
+                                <label for="chk_email">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile_phone">Send to Mobile Phone</label></td>
+                            <td>: <input type="text" id="mobile_phone" name="mobile_phone" value="089530824879" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Send to Email</label></td>
+                            <td>: <input type="text" id="email" name="email" value="ariqalghiffari7@gmail.com" size="30"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"
+                    <br>
+                    <input type="submit" value="Generate Pay Link">
+                </td>   
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
